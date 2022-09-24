@@ -31,5 +31,5 @@ function teleport() {
 function loser() {
   const h1 = document.getElementById('h');
   alert("I KNOW!!!!! HAHAHAHHA");
-  setTimeout(() => window.location = 'https://youtu.be/dQw4w9WgXcQ', 3000);
+  setTimeout(() => window.location = 'https://youtu.be/dQw4w9WgXcQ', 1300);
 }
