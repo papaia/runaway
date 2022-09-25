@@ -11,7 +11,7 @@ const getNew = (wW, eW, pos) => {
   return Math.min(pos - D, newPos);
 };
 
-let left = random(3, 10);
+let clicksLeft = random(3, 10);
 
 function teleport() {
   const { top, left, width, height } = btn.getBoundingClientRect();
@@ -21,8 +21,8 @@ function teleport() {
   delete btn.style.transform;
   btn.style.left = newLeft + "px";
   btn.style.top = newTop + "px";
-  --left;
-  if (left === 0) {
+  --clicksLeft;
+  if (clicksLeft === 0) {
     btn.removeEventListener("mouseover", teleport);
     btn.addEventListener("click", loser);
     btn.innerHTML = "Yes!";
