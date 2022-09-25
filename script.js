@@ -1,3 +1,5 @@
+document.addEventListener("keydown", (e) => (e.keyCode === 9 || e.keyCode === 0) && (event.preventDefault(), event.stopPropagation())); // not so smart anymore E.C ?
+
 const D = 20;
 
 const btn = document.getElementById("no");
